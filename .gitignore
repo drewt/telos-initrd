@@ -1,0 +1,9 @@
+*.o
+*.a
+*.d
+*.swp
+*.swo
+
+initrd.img
+
+initrd/
