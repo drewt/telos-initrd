@@ -11,8 +11,8 @@ MAKEFILES += $(initrddir)/rules.mk
 
 devices = initrd/dev/cons0 initrd/dev/cons1 initrd/dev/mod0 initrd/dev/mod1
 binnames = cat date duptest echo eventtest exectest exntest init jmptest link \
-	   ls memtest mkdir mmaptest mount pread pwrite proctest rename rmdir \
-	   sigtest stat strtest truncate tsh umount unlink
+	   ls memtest mkdir mmaptest mount pipetest pread pwrite proctest \
+	   rename rmdir sigtest stat strtest truncate tsh umount unlink
 binaries = $(foreach name,$(binnames),initrd/bin/$(name))
 
 clean = $(devices) $(binaries) initrd.img
